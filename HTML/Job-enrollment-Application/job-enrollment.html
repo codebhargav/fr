@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+     <title>Job-Enrollment</title>
+     <link rel="stylesheet" href="Style.css">
+
+    
+</head>
+<body>
+
+    <div>
+
+        <h2>Job Enrollment</h2>   
+
+    <form>
+
+        <label for="username">Username :</label>
+        <input type="text" id="username" name="username" placeholder="Username"><br>
+        
+        <label for="Password" >Password</label><br>
+        <input type="password" id="Password" name="Password"  placeholder="Password"><br>
+
+        <label for="Email">Email</label><br>
+        <input type="email" id="Email" name="Email" placeholder="Email"><br>
+
+        <label>About Yourself</label><br>
+       <textarea placeholder="Bio" rows="3" cols="25"></textarea><br>
+
+       <label for="designation">Designation</label><br>
+       <select id="designation" name="designation">
+       
+            <optgroup label="Designation">
+            <option value="software Engineer">software Engineer</option>
+            <option value="Devops Engineer">Devops Engineer</option>
+            <option value="DB Administrator">DB Administrator</option>
+            </optgroup>
+        </select><br>
+
+
+        <label for="dob">DOB</label><br>
+        <input type="date" id="dob" name="dob"><br>       
+
+
+        <label for="image">Your Image</label><br>
+        <input type="file" id="image" name="image"><br>
+
+
+        <label for="mobile">Mobile Number:</label>
+        <input type="number" id="mobile" name="mobile" placeholder="Enter your mobile number"><br>
+
+
+
+        <label for="Programming level">Programming level</label><br>
+
+        <label for="beginner">Beginner</label>
+        <input type="radio" id="beginner" name="programming_level" value="Beginner">
+
+        <label for="Intermediate">Intermediate</label>
+        <input type="radio" id="Intermediate" name="Programming level" value="Intermediate">Intermediate
+
+        <label for="Professional">Professional</label>
+        <input type="radio" id="Professional" name="Programming level" value="Professional">Professional <br>
+
+
+
+        <label for="Expertise in">Expertise in</label><br>
+        <label for="backend">Backend</label>
+        <input type="checkbox" id="backend" name="expertise" value="Backend">
+
+
+            
+        <label for="frontend">Frontend</label>
+        <input type="checkbox" id="frontend" name="expertise" value="Frontend">
+        
+        <label for="db">DB</label>
+        <input type="checkbox" id="db" name="expertise" value="DB">
+
+        <label for="fullstack">FullStack</label>
+        <input type="checkbox" id="fullstack" name="expertise" value="FullStack"><br>
+            
+
+
+        <label for="url">Website URL</label>
+        <input type="url" id="url" name="url" placeholder="Website URL">
+        
+
+       
+        <input class="button" type="submit" value="Enroll">       
+        <input class="button" type="Reset" value="Reset"><br>
+
+
+    </form>
+
+
+</div>
+    
+</body>
+</html>
