@@ -218,7 +218,7 @@ body{
     height:100%;
     width: 100%;
     background: #081b29;
-    animation: showRight 1s ease forwards;
+    animation: showRight 1s ease backwards;
     animation-delay: 1s;
 }
 .home-sci a:hover{
