@@ -2,47 +2,103 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-     <title>Bhargav</title>
-     <link rel="stylesheet" href="style.css">
-     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>Contact Information</title>
+    <style>
+        /* Global Styles */
+        body {
+            background-color: #081b29;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            font-family: "Arial", sans-serif;
+        }
 
+        /* Contact Box */
+        .contact {
+            text-align: center;
+            color: #00abf0;
+            font-size: 22px;
+            padding: 20px 30px;
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(0, 171, 240, 0.5);
+            background: rgba(0, 171, 240, 0.1);
+            animation: fadeIn 1.5s ease-in-out;
+        }
+
+        .contact h1 {
+            font-size: 36px;
+            margin-bottom: 15px;
+            animation: slideDown 1s ease-in-out;
+        }
+
+        .contact p {
+            margin: 10px 0;
+            opacity: 0;
+            animation: fadeInUp 1.5s ease-in-out forwards;
+        }
+
+        /* Contact Links */
+        .contact a {
+            text-decoration: none;
+            color: #00abf0;
+            font-weight: bold;
+            display: inline-block;
+            transition: 0.3s ease-in-out;
+            position: relative;
+        }
+
+        /* Neon Glow Hover Effect */
+        .contact a:hover {
+            color: #fff;
+            transform: scale(1.1);
+            text-shadow: 0 0 10px #00abf0, 0 0 20px #00abf0;
+        }
+
+
+
+        .back-link a{
+    display: block;  
+    text-align: center; /* Centers the text */
+    margin-top: 15px; /* Adds spacing from the contact details */
+    font-size: 16px;
+    color: #00abf0;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease-in-out;
+}
+
+.back-link:hover {
+    color: #fff;
+}
+
+
+        /* Animations */
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        @keyframes slideDown {
+            from { transform: translateY(-20px); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
+        }
+
+        @keyframes fadeInUp {
+            from { transform: translateY(20px); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
+        }
+    </style>
 </head>
 <body>
-
-    <header class="header">
-
-        <a href="#" class="logo">Bhargav.</a>
-
-        <nav class="navbar">
-
-            <a href="#" class="active">Home</a>
-            <a href="#">About</a>
-            <a href="#">Service</a>            
-            <a href="#">Portfolio</a>
-            <a href="#">Contact</a>
-        </nav>
-    </header>
-
-    <section class="home" >
-        <div class="home-content">
-            <h1>Hi, I'm Bhargav Kondaveeti</h1>
-            <h2>Frontend Developer</h2>
-            <p>Passionate Frontend Developer with a strong foundation in HTML, CSS, and JavaScript. Skilled in building responsive and user-friendly web applications. Eager to learn and contribute to innovative projects with modern frameworks like React.</p>
-            <div class="btn-box">
-                <a href="#">Hire me</a>
-                <a href="#">Let's Talk</a>
-            </div>
-        </div>
-        <div class="home-sci">          
-            <a href=><i class='bx bxl-facebook'></i></a>
-            <a href=""><i class='bx bxl-github'></i></a>
-            <a href=""><i class='bx bxl-linkedin'></i></a>
-        </div>
-        <span class="home-imgHover"></span>
+    <section class="contact">
+        <h1> How to Contact Me?</h1>
+        <p>📞 Phone: <a href="tel:+919502734880">+91 9502734880</a></p>
+        <p>✉️ Email: <a href="mailto:bhargavbobby633@gmail.com">abc@gmail.com</a></p>
+        <p><a href="index.html" class="back-link">Back to Main Menu</a></p>
     </section>
-
-
-  
     
+
 </body>
 </html>
